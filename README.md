@@ -2,6 +2,7 @@
 Send key combos to background applications
 
 Doesn't focus on the application, and works even if it's focused
+
 Currently supports one application per script
 
 NOT TESTED WITH MULTI-WINDOW APPS, could break stuff, I'm not sure
