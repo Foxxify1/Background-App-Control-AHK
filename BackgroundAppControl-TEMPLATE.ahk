@@ -1,29 +1,12 @@
 /*
  | Background App Control - TEMPLATE
- | 
  | Send hotkeys to your background apps!
- | Doesn't focus on the application, and works even if it's focused
- |
- | Currently supports one application per script
- | 
- | NOT TESTED WITH MULTI-WINDOW APPS, could break stuff, I'm not sure
- | 
- | INSTRUCTIONS:
- | Replace your_exe_here.exe with the application name of your choice
- |      > Same as the ahk_exe in Window Spy
- | Change the trigger hotkey to your combo of choice
- | Change the hotkey(s) sent to the background app to whatever you need
- | 
- | Todo: 
- | - Support multiple programs
- | - Check multi-window applications
- | 
 */
 #SingleInstance
 #NoTrayIcon ;Script will not be visible in the system tray
 #Requires AutoHotkey v2.0
 SetKeyDelay -1, 1 ;Sets the delay for the ControlSend function. First param is milliseconds to start (-1 instant), second param is the # millliseconds held. (Needed for some windows to recognize hotkeys)
-myExe := "Spotify.exe" ;Replace with your EXE
+myExe := "your_exe_here.exe" ;Replace with your EXE
 Global activeID := "" ;Checked/updated every time a hotkey gets pressed
 
 /*
