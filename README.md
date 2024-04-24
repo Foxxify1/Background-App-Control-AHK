@@ -1,5 +1,5 @@
 # Background-App-Control-AHK
-Send key combos to background applications
+Send key combos to background applications via AutoHotKey
 
 Doesn't focus on the application, and works even if it's focused
 
