@@ -8,7 +8,7 @@
 #UseHook ;Will surpress non-modifiers from being seen by the in-focus application
 #NoTrayIcon ;Script will not be visible in the system tray
 A_MenuMaskKey := "vkE8" ;Surpresses the pressing of Ctrl when releasing Win or Alt (Presses key code instead)
-SetKeyDelay -1, 1, "Play" ;Sets the delay for the ControlSend function. First param is milliseconds to start (-1 instant), second param is the # millliseconds held. (Needed for some windows to recognize hotkeys)
+SetKeyDelay -1, 1, ;Sets the delay for the ControlSend function. First param is milliseconds to start (-1 instant), second param is the # millliseconds held. (Needed for some windows to recognize hotkeys)
 myExe := "Spotify.exe" ;Replace with your EXE
 Global activeID := "" ;Checked/updated every time a hotkey gets pressed
 
